@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pintar com Jesus</title>
+  
+  <!-- Fontes fofas -->
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+  
+  <!-- CSS separado -->
+  <link rel="stylesheet" href="css/colorir.css">
+</head>
+<body>
+  <div class="colore-container">
+    <h1>Pinta com Jesus!</h1>
+    <p>Escolhe uma cor e pinta com o dedinho ou mouse</p>
+
+    <canvas id="desenho" width="800" height="600"></canvas>
+
+    <div class="cores" id="paleta">
+      <div class="cor" data-cor="#ff0000"></div>
+      <div class="cor" data-cor="#ff9800"></div>
+      <div class="cor" data-cor="#ffff00"></div>
+      <div class="cor" data-cor="#4caf50"></div>
+      <div class="cor" data-cor="#2196f3"></div>
+      <div class="cor" data-cor="#9c27b0"></div>
+      <div class="cor" data-cor="#000000"></div>
+      <div class="cor" data-cor="#ffffff"></div>
+    </div>
+
+    <div class="botoes">
+      <button onclick="limpar()">Limpar</button>
+      <button onclick="salvar()">Salvar Arte</button>
+      <button onclick="voltar()">Voltar</button>
+    </div>
+  </div>
+
+  <!-- JavaScript separado -->
+  <script src="js/colorir.js"></script>
+</body>
+</html>
